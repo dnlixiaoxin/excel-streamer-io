@@ -1,6 +1,7 @@
 package cn.aegisa.model.excelstreamerio;
 
 import cn.aegisa.model.excelstreamerio.listener.ExcelListener;
+import cn.aegisa.model.excelstreamerio.utils.ExcelStreamer;
 import cn.aegisa.model.excelstreamerio.vo.ExcelPropertyIndexModel;
 import com.alibaba.excel.ExcelReader;
 import com.alibaba.excel.ExcelWriter;
@@ -11,6 +12,7 @@ import org.junit.Test;
 
 import java.io.*;
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.UUID;
 
@@ -21,6 +23,18 @@ import java.util.UUID;
  */
 @SuppressWarnings("ALL")
 public class TestExcelStreamer {
+
+    @Test
+    public void test05() throws Exception {
+        List<String> list = new LinkedList<>();
+        list.add("name");
+        list.add("age");
+        list.add("score");
+        ExcelStreamer streamer = ExcelStreamer.getExcelStreamer(list, "d:/ff.xlsx");
+        streamer.write();
+        streamer.finish();
+    }
+
 
     /**
      * 测试读
