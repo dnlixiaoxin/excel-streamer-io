@@ -18,7 +18,7 @@ import java.util.List;
 import java.util.UUID;
 
 /**
- * @author lixiaoxin@guazi.com
+ * @author lixiaoxin
  * @serial
  * @since 2019-04-29 11:53
  */

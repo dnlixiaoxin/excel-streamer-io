@@ -6,7 +6,7 @@ import com.alibaba.excel.event.AnalysisEventListener;
 import com.alibaba.fastjson.JSON;
 
 /**
- * @author lixiaoxin@guazi.com
+ * @author lixiaoxin
  * @serial
  * @since 2019-04-28 19:38
  */
