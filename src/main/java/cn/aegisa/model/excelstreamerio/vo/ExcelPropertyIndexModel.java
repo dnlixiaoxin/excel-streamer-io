@@ -24,13 +24,4 @@ public class ExcelPropertyIndexModel extends BaseRowModel {
 
     @ExcelProperty(value = "地址", index = 3)
     private String address;
-
-    @ExcelProperty(value = "性别", index = 4)
-    private String sax;
-
-    @ExcelProperty(value = "高度", index = 5)
-    private String heigh;
-
-    @ExcelProperty(value = "备注", index = 6)
-    private String last;
 }
