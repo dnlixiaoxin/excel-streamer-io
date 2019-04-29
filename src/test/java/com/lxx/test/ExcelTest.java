@@ -45,7 +45,9 @@ public class ExcelTest {
 
     @Test
     public void testExcelUtil() throws IOException {
+        //  写入文件
         InputStream inputStream = new FileInputStream("/Users/lixiaoxin/Desktop/lixiaoxin.xls");
+
         try {
             ExcelReader reader = new ExcelReader(inputStream, null,
                     new AnalysisEventListener<List<String>>() {
