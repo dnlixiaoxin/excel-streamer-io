@@ -46,7 +46,7 @@ public class ExcelTest {
     @Test
     public void testExcelUtil() throws IOException {
         //  写入文件
-        InputStream inputStream = new FileInputStream("/Users/lixiaoxin/Desktop/lixiaoxin.xls");
+        InputStream inputStream = new FileInputStream("/Users/lixiaoxin/Desktop/222.xlsx");
 
         try {
             ExcelReader reader = new ExcelReader(inputStream, null,
@@ -56,6 +56,7 @@ public class ExcelTest {
                             System.out.println(
                                     "当前sheet:" + context.getCurrentSheet().getSheetNo() + " 当前行：" + context.getCurrentRowNum()
                                             + " data:" + object);
+                            System.out.println(1111111);
                         }
                         @Override
                         public void doAfterAllAnalysed(AnalysisContext context) {
